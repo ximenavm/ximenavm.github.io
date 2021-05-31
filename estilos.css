@@ -1,0 +1,173 @@
+body{
+    background: rgb(28, 203, 216) ;
+    /*Asignando una familia de fuentes para nuestro texto*/
+    font-family: 'Indie Flower', cursive;
+    color: #333;
+    font-size: 1.2em; 
+    line-height: 1.3em;
+    margin: 0.5rem;
+    padding-top: 2rem;
+}
+
+h1{
+    font-size: 2rem ; /*cuando especificamos valor relativo en relación a la raíz*/
+    line-height:  1.3em; /*cuando especificamos valor relativo de acuerdo al tamaño x default*/
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+
+
+p{
+    margin-bottom: 1.6rem; /**/
+    color: white;
+}
+
+
+.container{
+    width: 85%; /*Con este valor indicamos que se extienda hasta el 85% del navegador*/
+    max-width: 850px; /*con un ancho máximo de 850 pixeles*/
+    margin: 0 auto; /*Agregamos un margen de 0 arriba y abajo y automatico a los lados*/
+    text-align: justify; 
+}
+
+
+.header{
+    background: pink;
+    color: white;
+    padding: 2rem 0; /*agregando relleno proporción de 2 (arriba y abajo)y de los lados se coloca en 0*/
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+    .header a{
+        color: white;
+        text-decoration: none;/*quitamos el subrayado que marca el enlace*/
+        align-items: center;
+        font-family: 'Indie Flower', cursive;
+    }
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centrando los elementos del contenedor*/
+    flex-wrap: wrap;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.4cm;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+   
+}
+.navigation{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0.5rem;
+    list-style: square inside;;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+.navigation ul li {
+    padding: 12px 0;
+    padding: 2rem;
+    padding: 12px 0;
+    padding: 1rem;
+}
+    .navigation ul li a{
+        display: block;
+        padding: 0.5 rem 1rem ;
+        transition: all 0.6s linear;
+        border-radius: 5px;
+    }
+    .navigation ul li a:hover{
+background-color: #c593f3;
+justify-content: space-around;
+
+    }
+
+    .main{
+        padding-top: 12rem ;
+    }
+
+    #button-up{
+        width: 40px;
+        height: 40px;
+        background:#c593f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 50%;
+        font-size: 20px;
+        /*cambiar la posicion del icono*/
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        cursor: pointer;
+        border: 4px solid transparent;
+        transition: all 300ms ease;
+        transform: scale(0);
+    }
+
+    #button-up:hover{
+        transform: scale(1.1);
+        border-color: rgba(0,0,0,0,1);
+    }
+
+    .footer{
+        background-color: pink;
+        padding: 4rem 0;
+        text-align:center ;
+        margin-top: 6rem;
+    }
+    .redes-sociales{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+@media  screen and (max-width:767px) {
+    .navigation ul li {
+        display: inline-block;
+    }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5 rem 1rem ;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+        .navigation ul li a:hover{
+    background-color:hsl(197, 61%, 71%);
+        }
+}
+
+.footer-container{
+	display: inline-block;
+	justify-content: space-between;
+}
+.redes-sociales .buble i{
+	color: hsl(182, 73%, 46%);
+	padding: 12px 0;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.redes-sociales .buble:hover i{
+	color: pink;
+}
